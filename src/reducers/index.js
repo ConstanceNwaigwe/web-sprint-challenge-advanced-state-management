@@ -1,3 +1,4 @@
+import { FETCH_SMURFS_FAIL, FETCH_SMURFS_SUCCESS, FETCH_SMURFS_LOADING, ADD_SMURFS, ERROR_VALUE } from "../actions/index"
 
 export const initialState = {
     smurfs: [],
