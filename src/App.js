@@ -8,12 +8,17 @@ import axios from 'axios';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import { fetchSmurfs } from "./actions";
 
 class App extends Component {
+  //fetchSmurfs();
+  
+
   componentDidMount() {
     axios.get('http://localhost:3333/smurfs')
     .then(res => console.log(res))
     .catch(err => console.log('Axios Error', err));
+    fetchSmurfs();
   }
 
   render() {
